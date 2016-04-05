@@ -15,8 +15,8 @@ namespace :deploy do
   task :symlink_wp_assets do
     on roles(:web) do
       full_path = "#{fetch(:site_path)}/wp-content/"
-      execute "ln -s #{current_path}/wordpress/theme #{full_path}/themes/#{fetch(:theme)}"
-      execute "ln -s #{current_path}/wordpress/plugins #{full_path}/plugins"
+      execute "ln -s #{current_path}/assets/theme #{full_path}/themes/#{fetch(:theme)}"
+      execute "ln -s #{current_path}/assets/plugins #{full_path}/plugins"
     end
   end
 end
