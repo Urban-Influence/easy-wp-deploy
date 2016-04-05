@@ -1,0 +1,9 @@
+# Misc
+Gemfile.lock
+.DS_Store
+.bundle
+
+# CodeKit
+assets/theme/.sass-cache
+assets/theme/.scssc
+assets/theme/.codekit-cache
